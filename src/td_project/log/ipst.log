@@ -1,0 +1,18 @@
+#[INFO] IpTool V2025.08 (APP main), Windows 64bit (Release), Build 171484 2025/08/11, 10:43:30 Aug 11 2025 on WIN10-204
+#[INFO] Run at Tue Oct 13 10:18:34 2026
+
+#[INFO] Load ipc data success from C:/Users/Lenovo/Desktop/competition/HX4S20C_Player/src/td_project/al_ip/PLL_HDMI_AUDIO.ipc
+#[INFO] Load ipc data success from C:/Users/Lenovo/Desktop/competition/HX4S20C_Player/src/td_project/al_ip/PLL.ipc
+#[INFO] Load ipc data success from C:/Users/Lenovo/Desktop/competition/HX4S20C_Player/src/td_project/al_ip/AUDIO_SAMPLE_ROM.ipc
+#[INFO] Load ipc data success from C:/Users/Lenovo/Desktop/competition/HX4S20C_Player/src/td_project/../user_source/hdl_source/ip/afifo_16_32_256.ipc
+#[INFO] Load ipc data success from C:/Users/Lenovo/Desktop/competition/HX4S20C_Player/src/td_project/../user_source/hdl_source/ip/afifo_32_16_256.ipc
+#[INFO] Load ipc data success from C:/Users/Lenovo/Desktop/competition/HX4S20C_Player/src/td_project/../user_source/hdl_source/ip/sys_pll.ipc
+#[INFO] Load ipc data success from C:/Users/Lenovo/Desktop/competition/HX4S20C_Player/src/td_project/../user_source/hdl_source/ip/video_pll.ipc
+ipst_gui_select_dialog IP_Status
+ipst_gui_set_checkbox IP_Status ReportBrowser.IpStReportTree.SelectAll checked
+ipst_gui_set_checkbox IP_Status ReportBrowser.IpStReportTree.SelectAll unchecked
+ipst_gui_select_dialog IP_Status
+ipst_gui_resize_dialog IP_Status 1500 500 
+ipst_gui_select_dialog IP_Status
+ipst_gui_click_push_button IP_Status IpStatusDialog.Cancel
+#[INFO] ipst_exit 0

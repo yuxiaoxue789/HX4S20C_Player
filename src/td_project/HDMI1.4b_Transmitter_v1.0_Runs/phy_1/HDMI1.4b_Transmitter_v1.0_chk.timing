@@ -1,0 +1,806 @@
+Table of Contents
+-----------------
+1. checking no clock(0) (HIGH)
+2. checking clock definition(0) (HIGH)
+3. checking dummy node(4) (HIGH)
+4. checking invalid constraint(0) (HIGH)
+5. checking pll/clock buffer clock constraints(0) (HIGH)
+6. checking combinational loops(0) (HIGH)
+7. checking soft fifo timing exception constraints(0) (HIGH)
+8. checking no path constraints(0) (MEDIUM)
+9. checking shadowed/ignored timing exception constraints(0) (MEDIUM)
+10. checking no input delay(7) (MEDIUM)
+11. checking no output delay(23) (MEDIUM)
+12. checking partial input delay(0) (MEDIUM)
+13. checking partial output delay(0) (MEDIUM)
+14. checking abnormal input delay(32) (MEDIUM)
+
+
+1. checking nets with no clock driven. (HIGH)
+---------------------------------------------
+2. checking clock definition problems. (HIGH)
+---------------------------------------------
+2.1 There are 0 leaf clock pins driven by multiple clocks. (HIGH)
+
+
+2.2 There are 0 clocks created on internal clock network. (HIGH)
+
+
+2.3 There are 0 unexpandable clock sets. (HIGH)
+
+
+2.4 There are 0 local clocks. (HIGH)
+
+
+2.5 There are 0 generated clocks that are not connected to their master clocks. (HIGH)
+
+
+3. checking dummy nodes. (HIGH)
+---------------------------------------------
+There are 4 nodes are dangling. (HIGH)
+
+DummyNode in Model: EG_PHY_LSLICE
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[22]_syn_18.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[23]_syn_16.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[21]_syn_17.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[15]_syn_20.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[14]_syn_17.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[6]_syn_15.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[4]_syn_16.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[22]_syn_18.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[15]_syn_20.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[14]_syn_17.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[8]_syn_17.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[5]_syn_14.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[20]_syn_22.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[5]_syn_14.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[23]_syn_16.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[21]_syn_17.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[13]_syn_19.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[20]_syn_22.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[20]_syn_20.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[12]_syn_14.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[11]_syn_22.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[3]_syn_15.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[17]_syn_11.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_0_n_syn_359.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[10]_syn_27.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[10]_syn_23.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[20]_syn_20.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[9]_syn_18.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[3]_syn_17.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[16]_syn_17.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[8]_syn_19.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[12]_syn_229.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[8]_syn_17.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[9]_syn_4.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[4]_syn_13.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_64.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_39.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_47.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_54.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_54.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_49.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_57.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_51.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_64.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_54.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_71.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[2]_syn_42.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_0_n_syn_387.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_49.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_45.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_60.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_35.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_64.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_42.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_48.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[8]_syn_18.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[8]_syn_22.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[7]_syn_48.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[7]_syn_51.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[7]_syn_39.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[0]_syn_221.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_312.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[7]_syn_55.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_244.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[6]_syn_38.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_90.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_308.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_240.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_237.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_149.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_210.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[6]_syn_220.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_399.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_96.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_170.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_195.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_234.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_128.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_218.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[20]_syn_238.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_153.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[6]_syn_224.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_233.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_200.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_198.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_88.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_383.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_157.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_155.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_168.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[1]_syn_224.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_101.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_72.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_248.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_147.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_407.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_228.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_0_n_syn_377.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_86.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_96.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[13]_syn_221.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[6]_syn_226.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_229.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_220.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_357.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[6]_syn_212.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[18]_syn_211.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_368.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_409.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_422.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_353.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_222.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_340.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_228.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_377.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[14]_syn_237.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_298.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[6]_syn_28.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_329.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_273.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_371.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[13]_syn_229.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_373.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_363.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_226.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_412.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_416.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_340.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_350.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_358.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_214.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_439.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[14]_syn_235.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_311.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_399.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_391.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_263.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[23]_syn_216.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[19]_syn_212.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_314.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_345.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_428.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_269.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_394.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_292.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_396.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_284.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_230.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_227.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_386.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_386.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_430.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_382.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_402.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_425.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_425.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_246.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_0_n_syn_367.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_383.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_277.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[12]_syn_239.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_289.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_301.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_397.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_335.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_355.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_155.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_407.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[3]_syn_214.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[3]_syn_222.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_302.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_302.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_272.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_289.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_418.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_314.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_306.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_276.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_168.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_365.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_233.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_272.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_287.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_232.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_368.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_325.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_422.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_420.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_216.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_333.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_221.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_377.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_421.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[7]_syn_44.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[7]_syn_48.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_262.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_391.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[12]_syn_233.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_371.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[14]_syn_239.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[12]_syn_237.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_412.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_416.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_353.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_290.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_358.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_397.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_230.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[19]_syn_214.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[8]_syn_208.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_311.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_399.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[8]_syn_206.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_265.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_319.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[20]_syn_232.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_332.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_166.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_79.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_244.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_271.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_394.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_396.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_226.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_430.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_429.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_402.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_342.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_424.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_389.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_406.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_429.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_345.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_81.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_296.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[6]_syn_38.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_281.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_297.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_301.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_329.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_335.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[1]_syn_222.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_407.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_350.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_304.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[2]_syn_212.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_424.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_314.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_306.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_280.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_279.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_365.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_276.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[20]_syn_246.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_357.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_287.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[20]_syn_248.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_393.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_333.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_229.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[5]_syn_172.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_225.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_281.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_220.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_281.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[6]_syn_216.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_421.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_386.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_337.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_298.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[8]_syn_20.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[2]_syn_224.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_228.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_86.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[15]_syn_227.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_341.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_363.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_341.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_370.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_353.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_291.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[12]_syn_227.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[12]_syn_225.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[8]_syn_212.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[18]_syn_213.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[14]_syn_233.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_391.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_439.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_240.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_273.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_319.mi[0]
+	video_pp_m0/u_adj/pixel[20]_syn_4.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[4]_syn_70.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_332.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_284.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_216.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_268.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_345.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[3]_syn_428.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_379.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_222.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_238.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_215.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_0_n_syn_369.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[2]_syn_220.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[3]_syn_218.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[2]_syn_389.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_234.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[20]_syn_236.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_219.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_382.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[17]_syn_224.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_277.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[13]_syn_219.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_303.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[13]_syn_217.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[3]_syn_216.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_391.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[17]_syn_222.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[13]_syn_227.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[10]_syn_210.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_415.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_217.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[0]_syn_213.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_309.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[0]_syn_217.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[1]_syn_309.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_235.mi[0]
+	u_video_rgb_to_axis_640x480/I_rgb[6]_syn_42.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_40.mi[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u2_hdmi_tmds_encode/S_cnt_t_1_b[4]_syn_7.mi[0]
+	u_hdmi_audio_visualizer/fft_real[0]_b[67]_syn_5.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_island_period_2d_reg_syn_5.mi[0]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_54.c[1]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_67.c[1]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_52.c[1]
+	u_hdmi_audio_visualizer/fft_multiplier_input[3]_syn_89.c[0]
+	u_hdmi_audio_visualizer/sel0_syn_2727.b[1]
+	u_hdmi_audio_visualizer/sel0_syn_2743.b[0]
+	u_hdmi_audio_visualizer/sel0_syn_2727.a[1]
+	u_hdmi_audio_visualizer/sel0_syn_2743.a[0]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_54.b[1]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_67.b[1]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_52.b[1]
+	u_hdmi_audio_visualizer/fft_multiplier_input[3]_syn_89.b[0]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_54.d[1]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_67.d[1]
+	u_hdmi_audio_visualizer/fft_state_reg[2]_syn_52.d[1]
+	u_hdmi_audio_visualizer/fft_multiplier_input[3]_syn_89.d[0]
+	u_hdmi_audio_visualizer/sel0_syn_2727.d[1]
+	u_hdmi_audio_visualizer/sel0_syn_2743.d[0]
+	u_hdmi_audio_visualizer/sel0_syn_2727.c[1]
+	u_hdmi_audio_visualizer/sel0_syn_2743.c[0]
+	u_hdmi_text_overlay/mux117_syn_366.d[1]
+	u_hdmi_audio_visualizer/O_rgb_b[14]_syn_1730.d[0]
+	u_hdmi_text_overlay/mux117_syn_391.d[1]
+	u_hdmi_text_overlay/mux117_syn_388.d[1]
+	u_hdmi_audio_visualizer/O_rgb_b[14]_syn_1730.b[0]
+	u_hdmi_text_overlay/mux117_syn_391.b[1]
+	u_hdmi_text_overlay/mux117_syn_388.b[1]
+	u_hdmi_text_overlay/mux117_syn_366.c[1]
+	u_hdmi_audio_visualizer/O_rgb_b[14]_syn_1730.c[0]
+	u_hdmi_text_overlay/mux117_syn_391.c[1]
+	u_hdmi_text_overlay/mux117_syn_388.c[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_252.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_212.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_228.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_230.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_288.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[6]_syn_232.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[23]_syn_228.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_288.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[13]_syn_235.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_277.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_214.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[18]_syn_221.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[15]_syn_219.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_220.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[12]_syn_243.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_317.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[14]_syn_241.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_296.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_240.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_296.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[16]_syn_231.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[18]_syn_207.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[2]_syn_228.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[19]_syn_220.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[17]_syn_226.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_281.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[0]_syn_223.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_234.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_0_n_syn_385.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[1]_syn_212.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_225.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[0]_syn_227.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[1]_syn_228.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[21]_syn_223.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_236.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_304.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_411.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[15]_syn_221.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[15]_syn_231.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_222.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[15]_syn_223.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_219.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[5]_syn_217.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_387.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_387.mi[0]
+	u_hdmi_audio_visualizer/fft_real[0]_b[75]_syn_5.mi[0]
+	u_hdmi_audio_visualizer/write_index_reg[0]_syn_22.mi[1]
+	u_hdmi_audio_visualizer/write_index_reg[0]_syn_27.mi[1]
+
+DummyNode in Model: EG_PHY_MSLICE
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[7]_syn_19.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[5]_syn_20.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[4]_syn_18.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[7]_syn_19.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[12]_syn_23.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[4]_syn_22.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[18]_syn_12.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[18]_syn_12.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[16]_syn_233.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[23]_syn_224.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[10]_syn_19.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[8]_syn_22.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/src_pixel_reg[16]_syn_15.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[5]_syn_15.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_52.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_61.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_66.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_61.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_69.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_69.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[3]_syn_66.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_44.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_46.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_47.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_65.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_56.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_50.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_41.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_47.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_51.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[0]_syn_44.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_pixel_x_reg[1]_syn_56.mi[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_19.mi[1]
+	u_I2S_receiver/S_left_data_valid_n1_syn_12.d[1]
+	u_I2S_receiver/S_left_data_valid_n1_syn_10.d[1]
+	u_I2S_receiver/S_left_data_valid_n1_syn_12.c[1]
+	u_I2S_receiver/S_left_data_valid_n1_syn_10.c[1]
+	u_I2S_receiver/I_clk_syn_1081.mi[0]
+	u_hdmi_audio_visualizer/sel0_syn_2696.d[1]
+	u_hdmi_audio_visualizer/sel0_syn_2698.d[1]
+	u_hdmi_audio_visualizer/sel0_syn_2676.b[1]
+	u_hdmi_audio_visualizer/sel0_syn_2676.a[1]
+	u_hdmi_audio_visualizer/sel0_syn_2676.d[1]
+	u_hdmi_audio_visualizer/sel0_syn_2696.c[1]
+	u_hdmi_audio_visualizer/sel0_syn_2698.c[1]
+	u_hdmi_audio_visualizer/sel0_syn_2676.c[1]
+	u_hdmi_audio_visualizer/sel0_syn_2696.b[1]
+	u_hdmi_audio_visualizer/sel0_syn_2698.b[1]
+	u_hdmi_text_overlay/rx_shift_reg[1]_syn_11.d[0]
+	u_hdmi_text_overlay/rx_shift_reg[6]_syn_10.d[0]
+	u_hdmi_text_overlay/mux117_syn_386.d[1]
+	u_hdmi_text_overlay/mux117_syn_358.d[1]
+	u_hdmi_text_overlay/mux117_syn_386.b[1]
+	u_hdmi_text_overlay/mux117_syn_358.b[1]
+	u_hdmi_text_overlay/rx_shift_reg[1]_syn_11.c[0]
+	u_hdmi_text_overlay/rx_shift_reg[6]_syn_10.c[0]
+	u_hdmi_audio_visualizer/O_rgb_b[14]_syn_1391.d[1]
+	u_hdmi_audio_visualizer/O_rgb_b[14]_syn_1391.c[1]
+	u_hdmi_text_overlay/mux117_syn_386.c[1]
+	u_hdmi_text_overlay/mux117_syn_358.c[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[4]_syn_246.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_364.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_322.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[19]_syn_222.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_384.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_397.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[13]_syn_237.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_397.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_232.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[17]_syn_232.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[15]_syn_233.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[11]_syn_234.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[19]_syn_218.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_380.mi[1]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[22]_syn_254.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[17]_syn_230.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_232.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[7]_syn_236.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[18]_syn_217.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[3]_syn_224.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/source_read_x_reg[0]_syn_329.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[9]_syn_244.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[8]_syn_220.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[0]_syn_225.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_415.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[2]_syn_232.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/line_buffer_1_n_syn_413.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[20]_syn_258.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/bmp_frame_scaler_m0/pixel_b4[2]_syn_230.mi[0]
+
+DummyNode in Model: EG_PHY_MULT18
+	video_pp_m0/mult0_syn_3.a[7]
+	video_pp_m0/mult0_syn_3.a[8]
+
+DummyNode in Model: EG_PHY_PAD
+	seg_data[7]_syn_1.opad
+	U3/sdram_syn_5.opad
+	U3/sdram_syn_10.opad
+
+4. checking invalid constraints. (HIGH)
+---------------------------------------------
+There are 0 invalid constraints. (HIGH)
+
+
+5. checking PLL/buffer clocks. (HIGH)
+---------------------------------------------
+PLL/buffer inst: sys_pll_m0/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: u_audio_pll/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: video_pll_m0/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+6. checking combinational loops. (HIGH)
+---------------------------------------------
+There are 0 combinational loops. (HIGH)
+
+
+7. checking soft fifo set_max_delay constraints. (HIGH)
+---------------------------------------------
+There are 0 max-delay datapath-only paths that are part of the provided async clock paths, whereas the timing between other registers is not relaxed or ignored. (HIGH)
+
+
+8. checking no path constraints. (MEDIUM)
+---------------------------------------------
+There are 0 constraints that have no timing paths. (MEDIUM)
+
+
+9. checking path exception constraints shadowed/ignored by other constraints. (MEDIUM)
+---------------------------------------------
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		        36           36            0            0   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 7.700
+		        36           36            0            0   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 7.700
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+10. checking no input delay (MEDIUM)
+--------------------------
+There are 7 input ports that with no input delay specified. (MEDIUM)
+
+	HDMI_DDC_SDA
+	key1
+	key2
+	key3
+	rst_n
+	sd_miso
+	uart_rx
+
+11. checking no output delay (MEDIUM)
+--------------------------
+There are 23 output ports that with no output delay specified. (MEDIUM)
+
+	HDMI_CLK_P
+	HDMI_D0_P
+	HDMI_D1_P
+	HDMI_D2_P
+	HDMI_DDC_SCL
+	HDMI_DDC_SDA
+	sd_dclk
+	sd_mosi
+	sd_ncs
+	seg_data[7]
+	seg_data[6]
+	seg_data[5]
+	seg_data[4]
+	seg_data[3]
+	seg_data[2]
+	seg_data[1]
+	seg_data[0]
+	seg_sel[5]
+	seg_sel[4]
+	seg_sel[3]
+	seg_sel[2]
+	seg_sel[1]
+	seg_sel[0]
+
+12. checking partial input delay (MEDIUM)
+--------------------------
+There are 0 input ports with partial input delay specified. (MEDIUM)
+
+
+13. checking partial output delay (MEDIUM)
+--------------------------
+There are 0 output ports with partial output delay specified. (MEDIUM)
+
+
+14. checking abnormal set_input_delay constraints. (MEDIUM)
+---------------------------------------------
+There are 32 abnormal set_input_delay constraints. (MEDIUM)
+
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[31]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[30]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[29]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[28]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[27]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[26]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[25]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[24]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[23]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[22]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[21]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[20]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[19]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[18]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[17]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[16]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[15]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[14]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[13]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[12]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[11]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[10]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[9]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[8]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[7]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[6]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[5]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[4]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[3]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[2]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[1]} ]
+	 set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {sys_pll_m0/pll_inst.clkc[2]} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[0]} ]
+
